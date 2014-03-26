@@ -5,8 +5,7 @@ Summary:        Yum Plugin to allow you to append to installonlypkgs
 
 License:        GPL
 URL:            https://github.com/jsbillings/yum-plugin-appendinstallonly
-Source0:        appendinstallonly.py
-Source1:        appendinstallonly.conf
+Source0:        yum-plugin-appendinstallonly-%{version}.tar.gz
 
 Requires:       yum
 
@@ -16,6 +15,7 @@ without overwritting what's in /etc/yum.conf or overriding the
 defaults contained in yum's config.py code 
 
 %prep
+%setup -q
 
 %install
 rm -rf $RPM_BUILD_ROOT
