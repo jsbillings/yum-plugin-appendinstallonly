@@ -24,7 +24,7 @@ install -D -p -m 0644 appendinstallonly.conf $RPM_BUILD_ROOT/%{_sysconfdir}/yum/
 
 %files
 %doc README.md COPYING
-%{_prefix}/lib/yum-plugins/appendinstallonly.py
+%{_prefix}/lib/yum-plugins/appendinstallonly.py*
 %{_sysconfdir}/yum/pluginconf.d/appendinstallonly.conf
 
 %changelog
