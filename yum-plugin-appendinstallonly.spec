@@ -6,6 +6,9 @@ Summary:        Yum Plugin to allow you to append to installonlypkgs
 License:        GPL
 URL:            https://github.com/jsbillings/yum-plugin-appendinstallonly
 Source0:        yum-plugin-appendinstallonly-%{version}.tar.gz
+BuildArch:      noarch
+BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+
 
 Requires:       yum
 
