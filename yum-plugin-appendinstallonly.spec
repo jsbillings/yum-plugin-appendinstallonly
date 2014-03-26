@@ -19,8 +19,8 @@ defaults contained in yum's config.py code
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d -p -m 0755 appendinstallonly.py $RPM_BUILD_ROOT/%{_prefix}/lib/yum-plugins/appendinstallonly.py
-install -d -p -m 0644 appendinstallonly.conf $RPM_BUILD_ROOT/%{_sysconfdir}/yum/pluginconf.d/appendinstallonly.conf
+install -D -p -m 0755 appendinstallonly.py $RPM_BUILD_ROOT/%{_prefix}/lib/yum-plugins/appendinstallonly.py
+install -D -p -m 0644 appendinstallonly.conf $RPM_BUILD_ROOT/%{_sysconfdir}/yum/pluginconf.d/appendinstallonly.conf
 
 %files
 %doc README.md COPYING
