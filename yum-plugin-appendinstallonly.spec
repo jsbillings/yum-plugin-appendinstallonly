@@ -1,5 +1,5 @@
 Name:           yum-plugin-appendinstallonly
-Version:        0.5
+Version:        0.6
 Release:        1%{?dist}
 Summary:        Yum Plugin to allow you to append to installonlypkgs
 
@@ -28,6 +28,9 @@ install -D -p -m 0644 appendinstallonly.conf $RPM_BUILD_ROOT/%{_sysconfdir}/yum/
 %{_sysconfdir}/yum/pluginconf.d/appendinstallonly.conf
 
 %changelog
+* Wed Mar 26 2014 Jonathan Billings <jsbillin@umich.edu> 0.6-1
+- Spec File: include compiled python (jsbillin@umich.edu)
+
 * Wed Mar 26 2014 Jonathan Billings <jsbillin@umich.edu> 0.5-1
 - Spec File: fixed install again (jsbillin@umich.edu)
 
